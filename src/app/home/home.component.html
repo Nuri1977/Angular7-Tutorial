@@ -1,0 +1,12 @@
+<h1 [ngClass]="style1">Home</h1>
+
+<button (click)="firstClick()">Click me</button>
+<button (click)="testclick()">Test Service</button>
+
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar" alt="avatar">
+    <p>{{ user.first_name }} {{ user.last_name }}</p>
+  </li>
+
+</ul>
