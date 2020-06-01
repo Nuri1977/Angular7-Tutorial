@@ -9,7 +9,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getUsers() {
-    return this.http.get('https://reqres.in/api/users');
+    return this.http.get('https://reqres.in/api/users')
   }
 
   secondClick() {

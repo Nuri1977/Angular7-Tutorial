@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,10 +8,10 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
 
-h1Style: boolean = false;
-style1: string = 'large';
+  h1Style = false;
+  style1 = 'large';
 
-users: Object;
+  users: Object;
 
   constructor(private data: DataService) { }
 
@@ -27,10 +26,11 @@ users: Object;
     this.h1Style = true;
     this.style1 = 'gray';
   }
-
+  
   testclick() {
     this.data.secondClick();
   }
 
-
 }
+
+
